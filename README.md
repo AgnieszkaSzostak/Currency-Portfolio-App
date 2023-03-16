@@ -2,6 +2,8 @@
 ## :small_orange_diamond: About project:
 Application that calculates potential profit or loss from owned currencies purchased with Polish zloty. 
 
+### :arrow_forward: View live version: **[DEMO](https://agnieszkaszostak.github.io/Currency-Portfolio-App/)**
+
 User is able to input following information:
 * type of owned currency
 * amount of currency
