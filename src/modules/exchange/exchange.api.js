@@ -1,14 +1,14 @@
-// import config from "../../private.config";
-let config;
-if (process.env.NODE_ENV === 'development') {
-  // Importuj zmienną z pliku lokalnego
-  config = require('../../private.config').default;
-} else {
-  // Importuj zmienną z pliku GitHub Secrets
-  config = {
-    apiKey: process.env.API_KEY,
-  };
-}
+// // import config from "../../private.config";
+// let config;
+// if (process.env.NODE_ENV === 'development') {
+//   // Importuj zmienną z pliku lokalnego
+//   config = require('../../private.config').default;
+// } else {
+//   // Importuj zmienną z pliku GitHub Secrets
+//   config = {
+//     apiKey: process.env.API_KEY,
+//   };
+// }
 
 
 class ExchangeAPI {
@@ -16,7 +16,7 @@ class ExchangeAPI {
     options = {
         method: 'GET',
         headers: {
-            apiKey: config.apiKey,
+            apiKey: '4EEF4QplH9VLZ1YLWw52jOX0sBP81198',
         }
     }
     defaultCurrency = 'PLN'
