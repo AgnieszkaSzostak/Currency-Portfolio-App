@@ -10,10 +10,10 @@ User is able to input following information:
 * purchase date
 * purchase price provided automatically (if type of owned currency and purchase date provided)
 
-All of this information are stored in localStorage to retrieve the current exchange rates and load them to the application view on the next visit.
+All of this data is being stored in localStorage to retrieve the current exchange rates and load them to the application view on the next visit.
 
 
-Created in a way that each element can be easily transferred to another application. The state is managed by Redux with separete Store for localStorage data and API data. 
+The state is being managed by Redux with separated Store for localStorage data and API data. Created in a way that each element can be easily transferred to another application.
 
 //Screenshot
 
