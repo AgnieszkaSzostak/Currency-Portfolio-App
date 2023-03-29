@@ -14,6 +14,7 @@ const StyledForm = styled.form`
     box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.0);
     label {
         text-align: left;
+        padding: 0.5em 0;
     }
     .form__submit {
         align-self: center;
