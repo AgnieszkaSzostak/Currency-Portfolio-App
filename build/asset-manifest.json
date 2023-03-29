@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Currency-Portfolio-App/static/css/main.8387b0eb.css",
+    "main.js": "/Currency-Portfolio-App/static/js/main.ebdce48e.js",
+    "index.html": "/Currency-Portfolio-App/index.html",
+    "main.8387b0eb.css.map": "/Currency-Portfolio-App/static/css/main.8387b0eb.css.map",
+    "main.ebdce48e.js.map": "/Currency-Portfolio-App/static/js/main.ebdce48e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8387b0eb.css",
+    "static/js/main.ebdce48e.js"
+  ]
+}
