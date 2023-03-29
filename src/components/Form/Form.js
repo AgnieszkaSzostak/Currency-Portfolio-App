@@ -87,7 +87,9 @@ const Form = () => {
     return (
         <StyledForm onSubmit={handleSubmit}>
             {formElements()}
-            <input type="submit"></input>
+            <div className="form__submit">
+                <input type="submit" value="+"></input>
+            </div>
         </StyledForm>
     )
 }
