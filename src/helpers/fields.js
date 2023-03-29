@@ -1,14 +1,14 @@
 /* eslint-disable no-useless-escape */
 export const fields = [
     {
-        label: 'Wybierz walutę',
+        label: 'Select currency',
         tag: 'select',
         name: 'currency',
         placeholder: 'currency',
         required: true,
     },
     {
-        label: 'Ilość',
+        label: 'Amount',
         tag: 'input',
         type: 'number',
         name: 'amount',
@@ -18,7 +18,7 @@ export const fields = [
         error: 'Incorrect amount value'
     },
     {
-        label: 'Data zakupu',
+        label: 'Purchase date',
         tag: 'input',
         type: 'date',
         name: 'purchaseDate',
@@ -28,7 +28,7 @@ export const fields = [
         error: 'Incorrect date value'
     },
     {
-        label: 'Cena zakupu',
+        label: 'Price',
         tag: 'input',
         name: 'price',
         placeholder: 'price',
