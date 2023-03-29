@@ -6,7 +6,7 @@ User is able to input following information:
 * type of owned currency
 * amount of currency
 * purchase date
-* purchase price provided automatically (if type of owned currency and purchase date provided)
+* purchase price (provided automatically if type of owned currency and purchase date provided)
 
 All of this information are stored in localStorage to retrieve the current exchange rates and load them to the application view on the next visit.
 
@@ -14,7 +14,9 @@ All of this information are stored in localStorage to retrieve the current excha
 Created in a way that each element can be easily transferred to another application. The state is managed by Redux with separete Store for localStorage data and API data. 
 
 //Screenshot
+ 
 
+ Live: https://agnieszkaszostak.github.io/Currency-Portfolio-App/
 ## Built with:
 
 

@@ -1,40 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
 .App {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  display: flex;
-  
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 45em;
+  padding: 1em;
+  margin: 0 auto ;
+  background-color: #F7F7F7;
+  height: 100vh;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.App-title{
+  z-index: 1;
   color: white;
+  padding: 0.5em;
+  font-size: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-shape-divider-top-1680107035 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-shape-divider-top-1680107035 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 20em;
+  
+}
+
+.custom-shape-divider-top-1680107035 .shape-fill {
+  fill: #43AE9E;
+}
+.custom-shape-divider-top-1680107035::before{
+  content: '';
+  position: absolute;
+  bottom: -4em;
+  right: -5em;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background-color: #54C5B6;
+  display: block;
+  z-index: 1;
+}
+.custom-shape-divider-top-1680107035::after{
+  content: '';
+  position: absolute;
+  bottom: 1em;
+  left: 3.5em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: #54C5B6;
+  z-index: 0;
+}
+.custom-shape-divider-top-1680107035::after{
+  content: '';
+  position: absolute;
+  bottom: 6em;
+  left: 11em;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  background-color: #54C5B6;
+  z-index: 0;
+}
+
+
+.dollar {
+  color: #FFC168;
 }
