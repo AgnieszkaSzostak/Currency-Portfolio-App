@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Currency-Portfolio-App/static/css/main.0d776fcc.css",
-    "main.js": "/Currency-Portfolio-App/static/js/main.434b9d56.js",
+    "main.css": "/Currency-Portfolio-App/static/css/main.6dd590f0.css",
+    "main.js": "/Currency-Portfolio-App/static/js/main.94bc7955.js",
     "index.html": "/Currency-Portfolio-App/index.html",
-    "main.0d776fcc.css.map": "/Currency-Portfolio-App/static/css/main.0d776fcc.css.map",
-    "main.434b9d56.js.map": "/Currency-Portfolio-App/static/js/main.434b9d56.js.map"
+    "main.6dd590f0.css.map": "/Currency-Portfolio-App/static/css/main.6dd590f0.css.map",
+    "main.94bc7955.js.map": "/Currency-Portfolio-App/static/js/main.94bc7955.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d776fcc.css",
-    "static/js/main.434b9d56.js"
+    "static/css/main.6dd590f0.css",
+    "static/js/main.94bc7955.js"
   ]
 }
