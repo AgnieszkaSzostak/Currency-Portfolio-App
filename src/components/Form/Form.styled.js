@@ -6,7 +6,7 @@ const StyledForm = styled.form`
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 3em 2em;
     *{text-align: center};
     border-radius: 1em;
     background-color: white;
@@ -41,8 +41,8 @@ const StyledForm = styled.form`
     }
     .form__submit {
         align-self: center;
-        width: 4em;
-        height: 4em;
+        width: 3.5em;
+        height: 3.5em;
         background-color: #FFC168;
         border-radius: 0.3em;
         display: flex;
