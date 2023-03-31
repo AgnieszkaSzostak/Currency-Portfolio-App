@@ -15,6 +15,7 @@ const StyledForm = styled.form`
     box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.0);
     .form__input,
     .form__select{
+        width: 80%;
         padding: 0.5em 0;
         margin-top: 0.45em;
         border-radius: 0.3em;
@@ -60,10 +61,12 @@ const StyledForm = styled.form`
             transform: rotate(-45deg);
         }
     }
-    
     .form__submit:hover{
         box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.1);
     }
-
+    select .field__select-option{
+        color: red;
+        background-color: red;
+    }
 `
 export {StyledForm}

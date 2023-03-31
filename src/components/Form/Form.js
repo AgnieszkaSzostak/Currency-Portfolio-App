@@ -26,8 +26,8 @@ const Form = () => {
     const currencyOptionsList = () => {
         return (
             <>
-                <option value="none">Select an Option</option>
-                {currencies.map(curr => <option key={uuidv4()} value={curr}>{curr}</option>)}
+                <option className="field__select-option" value="none">Select an Option</option>
+                {currencies.map(curr => <option className="field__select-option" key={uuidv4()} value={curr}>{curr}</option>)}
             </>
             )
     }
