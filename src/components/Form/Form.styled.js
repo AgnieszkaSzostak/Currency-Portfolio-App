@@ -29,7 +29,7 @@ const StyledForm = styled.form`
         bottom: -2em;
         transform: rotate(-45deg);
         box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2);
-   
+        
         input {
             border: none;
             background-color: transparent;
@@ -37,6 +37,10 @@ const StyledForm = styled.form`
             color: white;
             transform: rotate(-45deg);
         }
+    }
+    
+    .form__submit:hover{
+        box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.1);
     }
 
 `
