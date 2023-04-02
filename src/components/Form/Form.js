@@ -53,7 +53,7 @@ const Form = () => {
         setForm({...form, [name]: value});
     }
     useEffect(()=> {
-        if(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(form.purchaseDate) && form.currency){
+        if(/^\d{4}-\d{2}-\d{2}$/.test(form.purchaseDate) && form.currency){
             const api = new ExchangeAPI()
             api.getHistoricalExchangeValue(form.purchaseDate, form.currency)
                 .then(resp => setForm({...form, price: Number(resp.rates['PLN']).toFixed(2)}))
@@ -63,6 +63,7 @@ const Form = () => {
         return fields.map(element =>
         <React.Fragment key={element.name}>
             <Field 
+                min={element.minDate}
                 label={element.label} 
                 type={element.type} 
                 tag={element.tag} 
@@ -78,7 +79,7 @@ const Form = () => {
             </Field>
             {
                 errors && errors[element.name] 
-                    ?   <span style={{color: 'red'}}>{errors[element.name]}</span>
+                    ?   <span className="form__error">{errors[element.name]}</span>
                     : null
             }
         </React.Fragment>

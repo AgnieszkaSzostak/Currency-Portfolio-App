@@ -8,6 +8,7 @@ export const validateForm = (form) => {
         if(required) {
             if(value.length === 0){
                 errors = {...errors, [name]: 'Empty field'}
+                
             }else if(pattern){
                 const reg = new RegExp(pattern)
                 if(!reg.test(value)){
