@@ -16,7 +16,7 @@ class ExchangeAPI {
     options = {
         method: 'GET',
         headers: {
-            apiKey: '4EEF4QplH9VLZ1YLWw52jOX0sBP81198',
+            apiKey: '9b4Ynqj34F71SA8OwB4i3luTqyRTUlE6',
         }
     }
     defaultCurrency = 'PLN'

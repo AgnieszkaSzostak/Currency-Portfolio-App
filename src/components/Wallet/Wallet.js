@@ -23,8 +23,8 @@ const Wallet = () => {
     },[lsState])
     
     return(
-        <StyledWallet>  
-            <thead>
+        <StyledWallet className="wallet__table table">  
+            <thead className="table__header">
                 <tr>
                     <th>Waluta</th>
                     <th>Ilość</th>
@@ -35,7 +35,7 @@ const Wallet = () => {
                     <th>Zysk/Strata</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className="table__main">
                 {exchangesState.length > 0 
                     ? exchangesState.map(element => <tr key={uuidv4()}>
                         <td>{element.currency}</td>

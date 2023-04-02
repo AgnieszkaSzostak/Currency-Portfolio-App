@@ -26,7 +26,7 @@ const StyledForm = styled.form`
     .form__select:focus{
         border: none;
         outline: none;
-        border-bottom: 2px solid #FFC168;;
+        border-bottom: 2px solid #FFC168;
     }
     .form__label {
         color: #43AE9E;
