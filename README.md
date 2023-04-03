@@ -17,10 +17,7 @@ The state is being managed by Redux with separated Store for localStorage data a
 
 //Screenshot
  
-
- Live: https://agnieszkaszostak.github.io/Currency-Portfolio-App/
 ## Built with:
-
 
 
 **React / Redux / API and Fetch / Webpack** 
@@ -41,7 +38,7 @@ At first install all dependencies:
 ```sh
 npm install
 ```
-1. Get a free API key at [API](https://exchangeratesapi.io/)
+1. It is possible that the number of API requests has exceeded the limit, so get a free&fresh API key at [API](https://exchangeratesapi.io/)
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
@@ -50,11 +47,15 @@ npm install
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your API key in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   const apiKey = 'ENTER YOUR API';
    ```
-5. 
+5. Enter
+   ```sh
+   npm start
+   ```
+ Project runs at port 3000.
 
 ## :small_orange_diamond: Usage example
 

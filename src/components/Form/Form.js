@@ -61,7 +61,7 @@ const Form = () => {
     },[form.purchaseDate, form.currency])
     const formElements = () => {
         return fields.map(element =>
-        <React.Fragment key={element.name}>
+        <React.Fragment key={element.name} className="form__element">
             <Field 
                 min={element.minDate}
                 label={element.label} 

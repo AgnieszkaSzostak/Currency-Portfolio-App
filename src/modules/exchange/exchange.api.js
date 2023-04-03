@@ -1,22 +1,11 @@
-// // import config from "../../private.config";
-// let config;
-// if (process.env.NODE_ENV === 'development') {
-//   // Importuj zmienną z pliku lokalnego
-//   config = require('../../private.config').default;
-// } else {
-//   // Importuj zmienną z pliku GitHub Secrets
-//   config = {
-//     apiKey: process.env.API_KEY,
-//   };
-// }
-
+import { apiKey } from "../../config";
 
 class ExchangeAPI {
     url = 'https://api.apilayer.com/exchangerates_data';
     options = {
         method: 'GET',
         headers: {
-            apiKey: '9b4Ynqj34F71SA8OwB4i3luTqyRTUlE6',
+            apiKey,
         }
     }
     defaultCurrency = 'PLN'
