@@ -27,7 +27,7 @@ const Wallet = () => {
         <StyledWallet className="wallet">  
             <thead className="wallet__header">
                 <tr className="wallet__row">
-                    {walletHeadings.map(heading => <th className="wallet__heading">{heading}</th>)}
+                    {walletHeadings.map(heading => <th key={heading} className="wallet__heading">{heading}</th>)}
                 </tr>
             </thead>
             <tbody className="wallet__body">

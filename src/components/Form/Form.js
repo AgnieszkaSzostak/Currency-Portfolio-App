@@ -51,6 +51,7 @@ const Form = () => {
     const handleChange = event => {
         const {name, value} = event.target
         setForm({...form, [name]: value});
+        setErrors({...errors, [name]: ''})
     }
     useEffect(()=> {
         if(/^\d{4}-\d{2}-\d{2}$/.test(form.purchaseDate) && form.currency){
@@ -61,7 +62,7 @@ const Form = () => {
     },[form.purchaseDate, form.currency])
     const formElements = () => {
         return fields.map(element =>
-        <React.Fragment key={element.name} className="form__element">
+            <React.Fragment key={element.name}>
             <Field 
                 min={element.minDate}
                 label={element.label} 
@@ -71,22 +72,22 @@ const Form = () => {
                 onChange={handleChange} 
                 placeholder={element.placeholder}
                 value={form[element.name]}
-                >{
-                    element.tag === 'select'
-                        ? currencyOptionsList()
+                error={
+                    errors && errors[element.name] 
+                        ?  errors[element.name]
                         : null
                 }
-            </Field>
-            {
-                errors && errors[element.name] 
-                    ?   <span className="form__error">{errors[element.name]}</span>
+                >{
+                    element.tag === 'select'
+                    ? currencyOptionsList()
                     : null
-            }
+                }
+            </Field>
         </React.Fragment>
         )
     }
     return (
-        <StyledForm onSubmit={handleSubmit}>
+        <StyledForm novalidate onSubmit={handleSubmit}>
             {formElements()}
             <div className="form__submit">
                 <input type="submit" value="+"></input>

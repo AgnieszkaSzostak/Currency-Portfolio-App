@@ -24,6 +24,7 @@ export const fields = [
         name: 'purchaseDate',
         placeholder: 'purchaseDate',
         required: true,
+        value: "",
         minDate: '2002-01-01',
         pattern: '^[0-9]{4}-[0-9]{2}-[0-9]{2}$',
         error: 'Incorrect date value'

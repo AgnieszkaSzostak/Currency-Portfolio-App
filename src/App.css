@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55em;
+  width: 60em;
   padding: 1em;
   margin: 0 auto ;
   background-color: #F7F7F7;
@@ -58,19 +58,8 @@
 .custom-shape-divider-top-1680107035::after{
   content: '';
   position: absolute;
-  bottom: 1em;
-  left: 3.5em;
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  background-color: #54C5B6;
-  z-index: 0;
-}
-.custom-shape-divider-top-1680107035::after{
-  content: '';
-  position: absolute;
   bottom: 6em;
-  left: 12.8em;
+  left: 14em;
   width: 7em;
   height: 7em;
   border-radius: 50%;
