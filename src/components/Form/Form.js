@@ -19,6 +19,7 @@ const Form = () => {
         amount: '',
         purchaseDate: '',
     });
+
     const lsAPI = new LocalStorageAPI();
     const [errors, setErrors] = useState(null)
 
@@ -41,7 +42,7 @@ const Form = () => {
                 currency: '',
                 price: '',
                 amount: '',
-                purchaseDate: ''
+                purchaseDate: '',
             })
         }else{
             setErrors(errors)
@@ -65,7 +66,7 @@ const Form = () => {
         return fields.map(element =>
             <React.Fragment key={element.name}>
             <Field 
-                min={element.minDate}
+                minDate={element.minDate}
                 label={element.label} 
                 type={element.type} 
                 tag={element.tag} 
@@ -78,11 +79,13 @@ const Form = () => {
                         ?  errors[element.name]
                         : null
                 }
+            
                 >{
                     element.tag === 'select'
                     ? currencyOptionsList()
                     : null
                 }
+                
             </Field>
         </React.Fragment>
         )
