@@ -50,6 +50,7 @@ const Form = () => {
     
     const handleChange = event => {
         const {name, value} = event.target
+        console.log(event);
         setForm({...form, [name]: value});
         setErrors({...errors, [name]: ''})
     }

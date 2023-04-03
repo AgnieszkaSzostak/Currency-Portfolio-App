@@ -1,2 +1,2 @@
-export const apiKey = "1BzCxrsKHKPuaUMLZ4Ucfnu13M28mFop"
+export const apiKey = "gtFhir6jg9cAwW68hxPVUfuNMFZ47Atz"
 

@@ -6,7 +6,6 @@ export const validateForm = (form) => {
         const {name, required, pattern = null, error} = field;
         const value = form[name];
         if(required) {
-            console.log(value);
             if(value.length === 0){
                 errors = {...errors, [name]: 'Empty field'}
                 
