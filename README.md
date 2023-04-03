@@ -20,7 +20,7 @@ The state is being managed by Redux with separated Store for localStorage data a
 ## Built with:
 
 
-**React / Redux / API and Fetch / Webpack** 
+**React / Redux / API and Fetch / Webpack / BEM** 
  
 ## :cd: How to run a project:
 
