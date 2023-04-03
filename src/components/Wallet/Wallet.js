@@ -23,16 +23,15 @@ const Wallet = () => {
         
     },[lsState])
     
-    return(
-        <StyledWallet className="wallet">  
+    if(exchangesState.length > 0) {
+       return ( <StyledWallet className="wallet">  
             <thead className="wallet__header">
                 <tr className="wallet__row">
                     {walletHeadings.map(heading => <th key={heading} className="wallet__heading">{heading}</th>)}
                 </tr>
             </thead>
             <tbody className="wallet__body">
-                {exchangesState.length > 0 
-                    ? exchangesState.map(element => <tr className="wallet__row" key={uuidv4()}>
+                    {exchangesState.map(element => <tr className="wallet__row" key={uuidv4()}>
                         <td className="wallet__cell">{element.currency}</td>
                         <td className="wallet__cell">{element.amount}</td>
                         <td className="wallet__cell">{element.purchaseDate}</td>
@@ -40,11 +39,10 @@ const Wallet = () => {
                         <td className="wallet__cell">{element.currentRate}zł</td>
                         <td className="wallet__cell">{element.currentValue}zł</td>
                         <td className="wallet__cell">{element.profit}zł</td>
-                    </tr>)
-                    : null}
+                    </tr>)}
             </tbody>
         </StyledWallet>
-    )
+        )
+    }
 }
-
 export default Wallet

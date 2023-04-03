@@ -8,6 +8,7 @@ class ExchangeAPI {
             apiKey,
         }
     }
+    
     defaultCurrency = 'PLN'
     getExchangeValue(currency){
         return this._fetch(currency)
