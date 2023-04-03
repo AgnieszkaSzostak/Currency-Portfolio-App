@@ -38,3 +38,7 @@ export const fields = [
         error: 'Incorrect price value'
     },
 ]
+
+export const walletHeadings = [
+    "Currency", "Amount", "Purchase date", "Price", "Current exchange rate", "Current value", "Profit/Loss"
+]

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { loadData } from "../../modules/localStorage/localStorage.actions";
 import { saveExchange } from "../../modules/exchange/exchange.actions";
 import { v4 as uuidv4 } from 'uuid';
+import { walletHeadings } from "../../helpers/fields";
 
 const Wallet = () => {
     const exchangesState = useSelector(state =>state.exchanges.data)
@@ -23,28 +24,22 @@ const Wallet = () => {
     },[lsState])
     
     return(
-        <StyledWallet className="wallet__table table">  
-            <thead className="table__header">
-                <tr>
-                    <th>Waluta</th>
-                    <th>Ilość</th>
-                    <th>Data zakupu</th>
-                    <th>Cena zakupu</th>
-                    <th>Obecny kurs</th>
-                    <th>Obecna wartość</th>
-                    <th>Zysk/Strata</th>
+        <StyledWallet className="wallet">  
+            <thead className="wallet__header">
+                <tr className="wallet__row">
+                    {walletHeadings.map(heading => <th className="wallet__heading">{heading}</th>)}
                 </tr>
             </thead>
-            <tbody className="table__main">
+            <tbody className="wallet__body">
                 {exchangesState.length > 0 
-                    ? exchangesState.map(element => <tr key={uuidv4()}>
-                        <td>{element.currency}</td>
-                        <td>{element.amount}</td>
-                        <td>{element.purchaseDate}</td>
-                        <td>{element.price}zł</td>
-                        <td>{element.currentRate}zł</td>
-                        <td>{element.currentValue}zł</td>
-                        <td>{element.profit}zł</td>
+                    ? exchangesState.map(element => <tr className="wallet__row" key={uuidv4()}>
+                        <td className="wallet__cell">{element.currency}</td>
+                        <td className="wallet__cell">{element.amount}</td>
+                        <td className="wallet__cell">{element.purchaseDate}</td>
+                        <td className="wallet__cell">{element.price}zł</td>
+                        <td className="wallet__cell">{element.currentRate}zł</td>
+                        <td className="wallet__cell">{element.currentValue}zł</td>
+                        <td className="wallet__cell">{element.profit}zł</td>
                     </tr>)
                     : null}
             </tbody>
