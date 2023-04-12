@@ -16,6 +16,7 @@ const StyledForm = styled.form.attrs(props=>({
     z-index: 1;
     box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.0);
 
+
     .form__container{
         color: #43AE9E;
         font-weight: bold;
@@ -74,6 +75,10 @@ const StyledForm = styled.form.attrs(props=>({
     .form__error{
         color: red;
         font-size: small;
+    }
+  
+    @media (max-width: 768px) {
+        width: 90%;
     }
 `
 export {StyledForm}
