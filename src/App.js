@@ -11,8 +11,8 @@ function App() {
         </svg>
       </div>
         <h1 className="App-title">Currency portfolio</h1>
-        <Form/>
-        <Wallet/>
+        <Form className="form"/>
+        <Wallet className="wallet"/>
     </div>
   );
 }

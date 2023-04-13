@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledWallet = styled.table`
+const StyledWalletDesktop = styled.table`
     border-collapse: separate;
     border-spacing: 0;
     width: 800px;
@@ -30,14 +30,6 @@ const StyledWallet = styled.table`
     .wallet__body .wallet__row:nth-child(odd) {
         background-color: white;
     }
-    @media (max-width: 767px) {
-        width: 90%;
-        
-        max-width: 767px;   
-        .wallet__row > *:not(:first-child):not(:nth-child(2)):not(:nth-child(5)):not(:last-child) {
-            display: none;
-        }
-  }
 `
 
-export default StyledWallet
+export default StyledWalletDesktop
