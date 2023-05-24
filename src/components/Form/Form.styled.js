@@ -16,17 +16,17 @@ const StyledForm = styled.form.attrs(props=>({
     z-index: 1;
     box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.0);
 
-
     .form__container{
         color: #43AE9E;
         font-weight: bold;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: left;
         padding: 0.5em 0;
         width: 50%;
+        position: relative;
     }
     .form__input,
     .form__select{

@@ -1,8 +1,11 @@
 import Form from './components/Form/Form';
 import './App.css';
+import React, {useState} from 'react';
 import Wallet from './components/Wallet/Wallet';
 
-function App() {
+const App = () => {
+
+
   return (
     <div className="App">
       <div className="custom-shape-divider-top-1680107035">

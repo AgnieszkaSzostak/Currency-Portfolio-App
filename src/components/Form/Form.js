@@ -12,7 +12,9 @@ import ExchangeAPI from "../../modules/exchange/exchange.api"
 import { v4 as uuidv4 } from 'uuid';
 import LocalStorageAPI from "../../modules/localStorage/localStorage.api"
 
-const Form = () => {
+const Form = (props) => {
+    const {isFetching, setIsFetching} = props.wallet
+    const [isLoading, setIsLoading] = useState(false);
     const [form, setForm] = useState({
         currency: '',
         price: '',
@@ -56,9 +58,14 @@ const Form = () => {
     }
     useEffect(()=> {
         if(/^\d{4}-\d{2}-\d{2}$/.test(form.purchaseDate) && form.currency){
+            setIsLoading(true)
             const api = new ExchangeAPI()
             api.getHistoricalExchangeValue(form.purchaseDate, form.currency)
-                .then(resp => setForm({...form, price: Number(resp.rates['PLN']).toFixed(2)}))
+                .then(resp => {
+                    setForm({...form, price: Number(resp.rates['PLN']).toFixed(2)})
+                    setIsLoading(false)
+                })
+               
         }
     },[form.purchaseDate, form.currency])
     const formElements = () => {
@@ -73,12 +80,12 @@ const Form = () => {
                 onChange={handleChange} 
                 placeholder={element.placeholder}
                 value={form[element.name]}
+                spinner={element.label === 'Price' ? isLoading : null}
                 error={
                     errors && errors[element.name] 
                         ?  errors[element.name]
                         : null
                 }
-            
                 >{
                     element.tag === 'select'
                     ? currencyOptionsList()
