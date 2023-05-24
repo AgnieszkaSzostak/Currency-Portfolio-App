@@ -12,8 +12,8 @@ import ExchangeAPI from "../../modules/exchange/exchange.api"
 import { v4 as uuidv4 } from 'uuid';
 import LocalStorageAPI from "../../modules/localStorage/localStorage.api"
 
-const Form = (props) => {
-    const {isFetching, setIsFetching} = props.wallet
+const Form = () => {
+ 
     const [isLoading, setIsLoading] = useState(false);
     const [form, setForm] = useState({
         currency: '',
